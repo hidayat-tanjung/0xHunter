@@ -14,7 +14,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 try:
     from config import TOKEN, CHAOS_API_KEY
 except ImportError:
-    TOKEN = "8871957081:AAGGfPl8obpC"
+    TOKEN = "telegram bot id"
     CHAOS_API_KEY = "07ecfd53-004e-4dab-b018-373"
 
 # ===== PAYLOAD UMUM =====
