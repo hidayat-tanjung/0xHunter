@@ -1,0 +1,9 @@
+reports/
+logs/
+payloads/
+config.py
+README.md
+install.sh
+.github/
+.git/
+.env*
