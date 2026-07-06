@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: 0xhunter-bot
+    restart: unless-stopped
+    environment:
+      - TOKEN=${TOKEN}
+      - CHAOS_API_KEY=${CHAOS_API_KEY}
+    volumes:
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+      - ./payloads:/app/payloads
+    networks:
+      - 0xhunter-network
+
+networks:
+  0xhunter-network:
+    driver: bridge
